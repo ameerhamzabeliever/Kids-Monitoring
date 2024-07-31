@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CHARLIEDISPLAY-REGULAR_0.TTF">
+            <string>CharlieDisplay-Regular</string>
+        </array>
+        <array key="CHARLIEDISPLAY-SEMIBOLD.TTF">
+            <string>CharlieDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Permission Pop UpVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PermissionPopUpVC" id="Y6W-OH-hqX" customClass="PermissionPopUpVC" customModule="LagomKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9F-eD-aJD">
+                                <rect key="frame" x="22" y="100" width="331" height="467"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-aU-Dvn">
+                                        <rect key="frame" x="34" y="35" width="263" height="158.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premiumImage" translatesAutoresizingMaskIntoConstraints="NO" id="dXE-hG-Iz6">
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="158.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="dXE-hG-Iz6" secondAttribute="bottom" id="Gho-h2-HtW"/>
+                                            <constraint firstItem="dXE-hG-Iz6" firstAttribute="top" secondItem="tlG-aU-Dvn" secondAttribute="top" id="KvQ-JU-8a9"/>
+                                            <constraint firstItem="dXE-hG-Iz6" firstAttribute="leading" secondItem="tlG-aU-Dvn" secondAttribute="leading" id="WUL-GD-u5d"/>
+                                            <constraint firstAttribute="trailing" secondItem="dXE-hG-Iz6" secondAttribute="trailing" id="zQ5-0l-glf"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uDr-t6-d5S">
+                                        <rect key="frame" x="30" y="205.5" width="271" height="136.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avail Premium Features Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="otF-Sv-YVf">
+                                                <rect key="frame" x="0.0" y="0.0" width="271" height="27"/>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Semibold" family="Charlie Display" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CharlieDisplay-Semibold" family="Charlie Display" pointSize="26"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="GjW-JJ-E05">
+                                                <rect key="frame" x="114" y="32" width="43" height="22"/>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="22"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="CTI-Hz-Sn9">
+                                                <rect key="frame" x="1" y="59" width="269" height="77.5"/>
+                                                <string key="text">All the premium features are locked as you are using a free account. Upgrade it to a premium account to enjoy all the latest features.</string>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="16"/>
+                                                <color key="textColor" name="grey_text"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="20"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-Zy-r9I">
+                                        <rect key="frame" x="15" y="402" width="301" height="50"/>
+                                        <color key="backgroundColor" red="0.9960647225" green="0.63140225409999995" blue="0.00021669254060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jHH-HQ-k8C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CharlieDisplay-Semibold" family="Charlie Display" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Upgrade Now">
+                                            <color key="titleColor" name="bg_White"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapActionBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UAy-TN-Tqe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="uDr-t6-d5S" firstAttribute="leading" secondItem="i9F-eD-aJD" secondAttribute="leading" constant="30" id="0vb-Xk-dHZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="OdZ-Zy-r9I" secondAttribute="bottom" constant="15" id="1wx-kS-x6L"/>
+                                    <constraint firstItem="tlG-aU-Dvn" firstAttribute="top" secondItem="i9F-eD-aJD" secondAttribute="top" constant="35" id="6kL-vc-OBk"/>
+                                    <constraint firstAttribute="trailing" secondItem="uDr-t6-d5S" secondAttribute="trailing" constant="30" id="AkN-dU-un5"/>
+                                    <constraint firstItem="OdZ-Zy-r9I" firstAttribute="leading" secondItem="i9F-eD-aJD" secondAttribute="leading" constant="15" id="NFC-WB-vqO"/>
+                                    <constraint firstAttribute="trailing" secondItem="tlG-aU-Dvn" secondAttribute="trailing" constant="34" id="cQW-iT-JhL"/>
+                                    <constraint firstItem="tlG-aU-Dvn" firstAttribute="height" secondItem="i9F-eD-aJD" secondAttribute="height" multiplier="0.339623" id="dwJ-9p-lzr"/>
+                                    <constraint firstItem="tlG-aU-Dvn" firstAttribute="leading" secondItem="i9F-eD-aJD" secondAttribute="leading" constant="34" id="eBD-5t-Pod"/>
+                                    <constraint firstItem="OdZ-Zy-r9I" firstAttribute="top" secondItem="uDr-t6-d5S" secondAttribute="bottom" constant="60" id="ged-Zp-USI"/>
+                                    <constraint firstAttribute="trailing" secondItem="OdZ-Zy-r9I" secondAttribute="trailing" constant="15" id="rnf-pd-ttC"/>
+                                    <constraint firstItem="uDr-t6-d5S" firstAttribute="top" secondItem="tlG-aU-Dvn" secondAttribute="bottom" constant="12" id="wb2-SR-wFb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.47573054231555256" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i9F-eD-aJD" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="1Gp-Nj-de2"/>
+                            <constraint firstItem="i9F-eD-aJD" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.7" id="3kZ-vL-34x"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="i9F-eD-aJD" secondAttribute="trailing" constant="22" id="cfr-xh-Kh4"/>
+                            <constraint firstItem="i9F-eD-aJD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="22" id="uG2-Js-yoI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAction" destination="OdZ-Zy-r9I" id="irI-zT-FMZ"/>
+                        <outlet property="imgContentView" destination="dXE-hG-Iz6" id="qXg-Zc-zUp"/>
+                        <outlet property="lblTitle" destination="otF-Sv-YVf" id="20E-NQ-ppj"/>
+                        <outlet property="lblTitle2" destination="GjW-JJ-E05" id="neJ-6z-K0Q"/>
+                        <outlet property="lblTitleDesc" destination="CTI-Hz-Sn9" id="zio-Cf-Jtl"/>
+                        <outlet property="viewContentBack" destination="i9F-eD-aJD" id="7Gd-PU-PuO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="51"/>
+        </scene>
+        <!--Reconfirm Pop UpVC-->
+        <scene sceneID="sFY-dV-0rj">
+            <objects>
+                <viewController storyboardIdentifier="ReconfirmPopUpVC" id="Ph4-mc-ImV" customClass="ReconfirmPopUpVC" customModule="LagomKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1yO-KK-S6j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAc-LN-2bD">
+                                <rect key="frame" x="22" y="100" width="331" height="467"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzO-tI-vUc">
+                                        <rect key="frame" x="34" y="35" width="263" height="180"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pickmeSilentImage" translatesAutoresizingMaskIntoConstraints="NO" id="Oe2-Fi-CEb">
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="180"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Oe2-Fi-CEb" firstAttribute="top" secondItem="qzO-tI-vUc" secondAttribute="top" id="6WQ-hf-LLw"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oe2-Fi-CEb" secondAttribute="trailing" id="Zu3-KP-bhy"/>
+                                            <constraint firstAttribute="bottom" secondItem="Oe2-Fi-CEb" secondAttribute="bottom" id="hFj-ox-TuC"/>
+                                            <constraint firstItem="Oe2-Fi-CEb" firstAttribute="leading" secondItem="qzO-tI-vUc" secondAttribute="leading" id="njv-FK-daF"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PNX-Wc-Tgi">
+                                        <rect key="frame" x="30" y="227" width="271" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Me Alert Sent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="XuS-HB-Yz2">
+                                                <rect key="frame" x="49" y="0.0" width="173" height="39.5"/>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Semibold" family="Charlie Display" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CharlieDisplay-Semibold" family="Charlie Display" pointSize="26"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent a Pick Me notification to your parents. They will be contacting you soon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vbZ-oH-bJo">
+                                                <rect key="frame" x="5" y="44.5" width="261.5" height="28.5"/>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="16"/>
+                                                <color key="textColor" name="grey_text"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="20"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-23-sG7">
+                                                <rect key="frame" x="1" y="78" width="269" height="32"/>
+                                                <string key="text">All the premium features are locked as you are using a free account. Upgrade it to a premium account to enjoy all the latest features.</string>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="16"/>
+                                                <color key="textColor" name="grey_dark"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="CharlieDisplay-Regular" family="Charlie Display" pointSize="20"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gsg-x2-xqs">
+                                        <rect key="frame" x="15" y="397" width="301" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ul-T0-tbx">
+                                                <rect key="frame" x="0.0" y="0.0" width="140.5" height="50"/>
+                                                <color key="backgroundColor" red="0.9960647225" green="0.63140225409999995" blue="0.00021669254060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Semibold" family="Charlie Display" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Send Again">
+                                                    <color key="titleColor" name="bg_White"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapActionBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7ys-3B-2hB"/>
+                                                    <action selector="didTapSendAgain:" destination="Ph4-mc-ImV" eventType="touchUpInside" id="ecK-no-Dz4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWw-hn-rji">
+                                                <rect key="frame" x="160.5" y="0.0" width="140.5" height="50"/>
+                                                <color key="backgroundColor" red="0.50974887609999997" green="0.54121047259999999" blue="0.6352151036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="CharlieDisplay-Semibold" family="Charlie Display" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" name="bg_White"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapActionBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3P5-DQ-Wqq"/>
+                                                    <action selector="didTapCancel:" destination="Ph4-mc-ImV" eventType="touchUpInside" id="fHh-hC-8co"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aMy-BR-BG2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gsg-x2-xqs" firstAttribute="top" secondItem="PNX-Wc-Tgi" secondAttribute="bottom" constant="60" id="03x-2n-NP1"/>
+                                    <constraint firstItem="PNX-Wc-Tgi" firstAttribute="leading" secondItem="SAc-LN-2bD" secondAttribute="leading" constant="30" id="B8s-rX-Roi"/>
+                                    <constraint firstAttribute="bottom" secondItem="gsg-x2-xqs" secondAttribute="bottom" constant="20" id="MUY-W7-wen"/>
+                                    <constraint firstItem="qzO-tI-vUc" firstAttribute="height" secondItem="SAc-LN-2bD" secondAttribute="height" multiplier="0.385439" id="Rg4-xR-cef"/>
+                                    <constraint firstItem="PNX-Wc-Tgi" firstAttribute="top" secondItem="qzO-tI-vUc" secondAttribute="bottom" constant="12" id="UyE-kp-YHf"/>
+                                    <constraint firstAttribute="trailing" secondItem="qzO-tI-vUc" secondAttribute="trailing" constant="34" id="cLy-yq-1PN"/>
+                                    <constraint firstItem="qzO-tI-vUc" firstAttribute="leading" secondItem="SAc-LN-2bD" secondAttribute="leading" constant="34" id="fo2-qx-Spw"/>
+                                    <constraint firstAttribute="trailing" secondItem="gsg-x2-xqs" secondAttribute="trailing" constant="15" id="fqd-Lb-Rh8"/>
+                                    <constraint firstItem="gsg-x2-xqs" firstAttribute="leading" secondItem="SAc-LN-2bD" secondAttribute="leading" constant="15" id="lwa-XR-KJf"/>
+                                    <constraint firstAttribute="trailing" secondItem="PNX-Wc-Tgi" secondAttribute="trailing" constant="30" id="pSQ-3f-1aG"/>
+                                    <constraint firstItem="qzO-tI-vUc" firstAttribute="top" secondItem="SAc-LN-2bD" secondAttribute="top" constant="35" id="tNK-z1-f17"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xLP-sy-XEm"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.4833440717482409" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xLP-sy-XEm" firstAttribute="trailing" secondItem="SAc-LN-2bD" secondAttribute="trailing" constant="22" id="Ebp-02-3z7"/>
+                            <constraint firstItem="SAc-LN-2bD" firstAttribute="centerY" secondItem="xLP-sy-XEm" secondAttribute="centerY" id="NZa-b3-Kwe"/>
+                            <constraint firstItem="SAc-LN-2bD" firstAttribute="height" secondItem="1yO-KK-S6j" secondAttribute="height" multiplier="0.7" id="VD6-ND-CZi"/>
+                            <constraint firstItem="SAc-LN-2bD" firstAttribute="leading" secondItem="1yO-KK-S6j" secondAttribute="leading" constant="22" id="WB2-w2-M3v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="lWw-hn-rji" id="WPw-li-CdX"/>
+                        <outlet property="btnSendAgain" destination="7Ul-T0-tbx" id="wkV-a6-ic0"/>
+                        <outlet property="imgContentView" destination="Oe2-Fi-CEb" id="Wad-pf-Yxv"/>
+                        <outlet property="lblTitle" destination="XuS-HB-Yz2" id="88Z-Gm-aMW"/>
+                        <outlet property="lblTitleDesc" destination="vbZ-oH-bJo" id="riI-Da-7el"/>
+                        <outlet property="lblTitleDesc1" destination="x8w-23-sG7" id="lwE-J7-J5g"/>
+                        <outlet property="viewContentBack" destination="SAc-LN-2bD" id="pBG-i4-GYD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J0S-CC-rQR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pickmeSilentImage" width="525" height="360"/>
+        <image name="premiumImage" width="525" height="360"/>
+        <namedColor name="bg_White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey_dark">
+            <color red="0.58799999952316284" green="0.62000000476837158" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey_text">
+            <color red="0.50999999046325684" green="0.54100000858306885" blue="0.63499999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

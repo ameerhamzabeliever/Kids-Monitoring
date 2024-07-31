@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.5.0)
+  - KDCircularProgress (1.5.4)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - KDCircularProgress
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KDCircularProgress
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  KDCircularProgress: 98200c6b8e85d22bc04eb644721d3b1e12b0686b
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 41cfaf708392a9c7999e23fe36fc6e50a6c79742
+
+COCOAPODS: 1.14.3
